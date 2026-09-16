@@ -1,0 +1,15 @@
+id,area,priority,weight_kg
+101,Nasr City,1,6.0
+102,Nasr City,2,5.0
+103,Nasr City,3,3.0
+104,Dokki,1,4.5
+105,Dokki,1,3.5
+106,Dokki,2,2.0
+107,Zamalek,1,15.0
+108,Maadi,1,9.9
+109, maadi ,2,0.05
+101,Dokki,1,1.0
+110,Heliopolis,,4.0
+111,Heliopolis,2,heavy
+112,,2,3.0
+113,Giza,0,1.0
