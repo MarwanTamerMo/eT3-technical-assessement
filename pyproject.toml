@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "route-planner"
+version = "1.0.0"
+description = "Groups delivery requests into capacity-limited, priority-ordered delivery trips."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Marwan Abdelmoneim" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pre-commit>=3.7", "ruff>=0.6"]
+
+[project.scripts]
+route-planner = "route_planner.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/route_planner"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
